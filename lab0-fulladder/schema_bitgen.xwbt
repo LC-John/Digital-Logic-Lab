@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\DrLC\Downloads\lab0\lab0-fulladder\schema.ncd
+OUTFILE=C:\Users\DrLC\Downloads\lab0\lab0-fulladder\schema.bit
+FAMILY=Spartan3E
+PART=xc3s100e-5cp132
+WORKINGDIR=C:\Users\DrLC\Downloads\lab0\lab0-fulladder
+LICENSE=WebPack
+USER_INFO=174169066_174169067_0_271

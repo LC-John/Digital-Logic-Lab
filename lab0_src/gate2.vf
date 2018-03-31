@@ -1,0 +1,71 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : gate2.vf
+// /___/   /\     Timestamp : 03/30/2018 16:49:58
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Users/DrLC/Downloads/lab0/lab0_src/gate2.vf -w C:/Users/DrLC/Downloads/lab0/lab0_src/gate2.sch
+//Design Name: gate2
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module gate2(SW, 
+             LD);
+
+    input [2:0] SW;
+   output [7:0] LD;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_4;
+   
+   AND2  XLXI_1 (.I0(SW[1]), 
+                .I1(SW[2]), 
+                .O(LD[0]));
+   NAND2  XLXI_2 (.I0(SW[1]), 
+                 .I1(SW[2]), 
+                 .O(LD[1]));
+   NOR2  XLXI_3 (.I0(SW[1]), 
+                .I1(SW[2]), 
+                .O(LD[3]));
+   OR2  XLXI_4 (.I0(SW[1]), 
+               .I1(SW[2]), 
+               .O(LD[2]));
+   XNOR2  XLXI_5 (.I0(SW[1]), 
+                 .I1(SW[2]), 
+                 .O(LD[5]));
+   XOR2  XLXI_6 (.I0(SW[1]), 
+                .I1(SW[2]), 
+                .O(LD[4]));
+   NAND2  XLXI_7 (.I0(SW[1]), 
+                 .I1(SW[2]), 
+                 .O(XLXN_2));
+   NAND2  XLXI_8 (.I0(SW[0]), 
+                 .I1(SW[2]), 
+                 .O(XLXN_3));
+   NAND2  XLXI_9 (.I0(SW[0]), 
+                 .I1(SW[1]), 
+                 .O(XLXN_4));
+   XOR2  XLXI_10 (.I0(SW[1]), 
+                 .I1(SW[2]), 
+                 .O(XLXN_1));
+   NAND3  XLXI_11 (.I0(XLXN_4), 
+                  .I1(XLXN_3), 
+                  .I2(XLXN_2), 
+                  .O(LD[7]));
+   XOR2  XLXI_12 (.I0(SW[0]), 
+                 .I1(XLXN_1), 
+                 .O(LD[6]));
+endmodule

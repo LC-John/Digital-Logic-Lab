@@ -1,0 +1,19 @@
+sch2hdl -intstyle ise -family spartan3e -verilog gate2_drc.vf -w C:/Users/DrLC/Downloads/lab0/lab0_src/gate2.sch 
+xst -intstyle ise -ifn "C:/Users/DrLC/Downloads/lab0/lab0_src/gate2.xst" -ofn "C:/Users/DrLC/Downloads/lab0/lab0_src/gate2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 gate2.ngc gate2.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o gate2_map.ncd gate2.ngd gate2.pcf 
+par -w -intstyle ise -ol high -t 1 gate2_map.ncd gate2.ncd gate2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml gate2.twx gate2.ncd -o gate2.twr gate2.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 gate2.ngc gate2.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o gate2_map.ncd gate2.ngd gate2.pcf 
+par -w -intstyle ise -ol high -t 1 gate2_map.ncd gate2.ncd gate2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml gate2.twx gate2.ncd -o gate2.twr gate2.pcf 
+bitgen -intstyle ise -f gate2.ut gate2.ncd 
+bitgen -intstyle ise -f gate2.ut gate2.ncd 
+sch2hdl -intstyle ise -family spartan3e -verilog gate2_drc.vf -w C:/Users/DrLC/Downloads/lab0/lab0_src/gate2.sch 
+xst -intstyle ise -ifn "C:/Users/DrLC/Downloads/lab0/lab0_src/gate2.xst" -ofn "C:/Users/DrLC/Downloads/lab0/lab0_src/gate2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2.ucf -p xc3s100e-cp132-5 gate2.ngc gate2.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o gate2_map.ncd gate2.ngd gate2.pcf 
+par -w -intstyle ise -ol high -t 1 gate2_map.ncd gate2.ncd gate2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml gate2.twx gate2.ncd -o gate2.twr gate2.pcf -ucf Basys2.ucf 
+bitgen -intstyle ise -f gate2.ut gate2.ncd 

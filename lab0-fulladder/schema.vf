@@ -1,0 +1,53 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : schema.vf
+// /___/   /\     Timestamp : 03/31/2018 15:42:27
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Users/DrLC/Downloads/lab0/lab0-fulladder/schema.vf -w C:/Users/DrLC/Downloads/lab0/lab0-fulladder/schema.sch
+//Design Name: schema
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module schema(SW, 
+              LD);
+
+    input [2:0] SW;
+   output [7:0] LD;
+   
+   
+   AND2  XLXI_1 (.I0(SW[1]), 
+                .I1(SW[2]), 
+                .O(LD[0]));
+   OR2  XLXI_2 (.I0(SW[1]), 
+               .I1(SW[2]), 
+               .O(LD[2]));
+   NOR2  XLXI_3 (.I0(SW[1]), 
+                .I1(SW[2]), 
+                .O(LD[3]));
+   XOR2  XLXI_4 (.I0(SW[1]), 
+                .I1(SW[2]), 
+                .O(LD[4]));
+   XNOR2  XLXI_5 (.I0(SW[1]), 
+                 .I1(SW[2]), 
+                 .O(LD[5]));
+   NAND2  XLXI_12 (.I0(SW[1]), 
+                  .I1(SW[2]), 
+                  .O(LD[1]));
+   fulladder  XLXI_13 (.a(SW[2]), 
+                      .b(SW[1]), 
+                      .cin(SW[0]), 
+                      .cout(LD[7]), 
+                      .sum(LD[6]));
+endmodule

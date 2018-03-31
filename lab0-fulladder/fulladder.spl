@@ -1,0 +1,11 @@
+[Inputs]
+a
+b
+cin
+[Outputs]
+sum
+cout
+[BiDir]
+[ATTRIBUTES]
+VeriModel fulladder
+

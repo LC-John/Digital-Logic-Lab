@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\DrLC\Downloads\lab0\lab0_src\gate2.ncd
+OUTFILE=C:\Users\DrLC\Downloads\lab0\lab0_src\gate2.bit
+FAMILY=Spartan3E
+PART=xc3s100e-5cp132
+WORKINGDIR=C:\Users\DrLC\Downloads\lab0\lab0_src
+LICENSE=WebPack
+USER_INFO=174169066_174169067_0_271

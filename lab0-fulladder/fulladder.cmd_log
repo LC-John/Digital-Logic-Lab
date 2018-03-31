@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/Users/DrLC/Downloads/lab0/lab0-fulladder/fulladder.v -lang verilog -prj lab0-fulladder -o fulladder.spl -module fulladder -template C:/XilinxISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e fulladder.spl C:/Users/DrLC/Downloads/lab0/lab0-fulladder/fulladder.sym 
