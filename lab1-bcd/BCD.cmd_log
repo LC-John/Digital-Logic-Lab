@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/Users/DrLC/Downloads/lab1/lab1-bcd/bcd_module.v -lang verilog -prj lab1-bcd -o BCD.spl -module BCD -template C:/XilinxISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e BCD.spl C:/Users/DrLC/Downloads/lab1/lab1-bcd/BCD.sym 

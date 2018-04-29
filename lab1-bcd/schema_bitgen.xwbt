@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\DrLC\Downloads\lab1\lab1-bcd\schema.ncd
+OUTFILE=C:\Users\DrLC\Downloads\lab1\lab1-bcd\schema.bit
+FAMILY=Spartan3E
+PART=xc3s100e-5cp132
+WORKINGDIR=C:\Users\DrLC\Downloads\lab1\lab1-bcd
+LICENSE=WebPack
+USER_INFO=174169066_174169067_0_271

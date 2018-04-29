@@ -1,0 +1,1 @@
+vhdtdtfi -lib work C:/Users/DrLC/Downloads/lab1/lab1-bcd/bcd_module.v -lang verilog -prj lab1-bcd -o bcd_module.spl -module bcd_module -template C:/XilinxISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
