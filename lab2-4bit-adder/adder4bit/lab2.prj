@@ -1,0 +1,6 @@
+verilog work "leddigit.v"
+verilog work "choose.v"
+verilog work "byte2bcd.v"
+verilog work "an_gen.v"
+verilog work "adder.v"
+verilog work "lab2.vf"

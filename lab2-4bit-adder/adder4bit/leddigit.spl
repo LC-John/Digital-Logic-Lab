@@ -1,0 +1,15 @@
+[Inputs]
+=Dd[3:0]=
+[Outputs]
+a
+b
+c
+d
+e
+f
+g
+dp
+[BiDir]
+[ATTRIBUTES]
+VeriModel leddigit
+

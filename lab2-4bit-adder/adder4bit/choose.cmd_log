@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/Users/DrLC/Downloads/LogicalLab/lab2-4bit-adder/adder4bit/choose.v -lang verilog -prj adder4bit -o choose.spl -module choose -template C:/XilinxISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e choose.spl C:/Users/DrLC/Downloads/LogicalLab/lab2-4bit-adder/adder4bit/choose.sym 

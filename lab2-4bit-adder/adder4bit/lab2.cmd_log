@@ -1,0 +1,25 @@
+sch2sym -intstyle ise -family spartan3e -refsym lab2 C:/Users/DrLC/Downloads/LogicalLab/lab2-4bit-adder/adder4bit/lab2.sch C:/Users/DrLC/Downloads/LogicalLab/lab2-4bit-adder/adder4bit/lab2.sym 
+xst -intstyle ise -ifn "C:/Users/DrLC/Downloads/LogicalLab/lab2-4bit-adder/adder4bit/lab2.xst" -ofn "C:/Users/DrLC/Downloads/LogicalLab/lab2-4bit-adder/adder4bit/lab2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_Lab2.ucf -p xc3s100e-cp132-5 lab2.ngc lab2.ngd  
+xst -intstyle ise -ifn "C:/Users/DrLC/Downloads/LogicalLab/lab2-4bit-adder/adder4bit/lab2.xst" -ofn "C:/Users/DrLC/Downloads/LogicalLab/lab2-4bit-adder/adder4bit/lab2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_Lab2.ucf -p xc3s100e-cp132-5 lab2.ngc lab2.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o lab2_map.ncd lab2.ngd lab2.pcf 
+par -w -intstyle ise -ol high -t 1 lab2_map.ncd lab2.ncd lab2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml lab2.twx lab2.ncd -o lab2.twr lab2.pcf -ucf Basys2_Lab2.ucf 
+bitgen -intstyle ise -f lab2.ut lab2.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_Lab2.ucf -p xc3s100e-cp132-5 lab2.ngc lab2.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o lab2_map.ncd lab2.ngd lab2.pcf 
+par -w -intstyle ise -ol high -t 1 lab2_map.ncd lab2.ncd lab2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml lab2.twx lab2.ncd -o lab2.twr lab2.pcf -ucf Basys2_Lab2.ucf 
+xst -intstyle ise -ifn "C:/Users/DrLC/Downloads/LogicalLab/lab2-4bit-adder/adder4bit/lab2.xst" -ofn "C:/Users/DrLC/Downloads/LogicalLab/lab2-4bit-adder/adder4bit/lab2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_Lab2.ucf -p xc3s100e-cp132-5 lab2.ngc lab2.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o lab2_map.ncd lab2.ngd lab2.pcf 
+par -w -intstyle ise -ol high -t 1 lab2_map.ncd lab2.ncd lab2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml lab2.twx lab2.ncd -o lab2.twr lab2.pcf -ucf Basys2_Lab2.ucf 
+bitgen -intstyle ise -f lab2.ut lab2.ncd 
+xst -intstyle ise -ifn "C:/Users/DrLC/Downloads/LogicalLab/lab2-4bit-adder/adder4bit/lab2.xst" -ofn "C:/Users/DrLC/Downloads/LogicalLab/lab2-4bit-adder/adder4bit/lab2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_Lab2.ucf -p xc3s100e-cp132-5 lab2.ngc lab2.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o lab2_map.ncd lab2.ngd lab2.pcf 
+par -w -intstyle ise -ol high -t 1 lab2_map.ncd lab2.ncd lab2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml lab2.twx lab2.ncd -o lab2.twr lab2.pcf -ucf Basys2_Lab2.ucf 
+bitgen -intstyle ise -f lab2.ut lab2.ncd 

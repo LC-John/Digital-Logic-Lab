@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/Users/DrLC/Downloads/LogicalLab/lab2-4bit-adder/adder4bit/adder.v -lang verilog -prj adder4bit -o adder.spl -module adder -template C:/XilinxISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e adder.spl C:/Users/DrLC/Downloads/LogicalLab/lab2-4bit-adder/adder4bit/adder.sym 

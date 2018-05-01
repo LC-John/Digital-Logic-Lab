@@ -1,0 +1,4 @@
+vhdtdtfi -lib work C:/Users/DrLC/Downloads/LogicalLab/lab2-4bit-adder/adder4bit/an_gen.v -lang verilog -prj adder4bit -o an_gen.spl -module an_gen -template C:/XilinxISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e an_gen.spl C:/Users/DrLC/Downloads/LogicalLab/lab2-4bit-adder/adder4bit/an_gen.sym 
+vhdtdtfi -lib work C:/Users/DrLC/Downloads/LogicalLab/lab2-4bit-adder/adder4bit/an_gen.v -lang verilog -prj adder4bit -o an_gen.spl -module an_gen -template C:/XilinxISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e an_gen.spl C:/Users/DrLC/Downloads/LogicalLab/lab2-4bit-adder/adder4bit/an_gen.sym 

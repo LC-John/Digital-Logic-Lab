@@ -1,0 +1,66 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : lab2.vf
+// /___/   /\     Timestamp : 05/01/2018 12:52:35
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Users/DrLC/Downloads/LogicalLab/lab2-4bit-adder/adder4bit/lab2.vf -w C:/Users/DrLC/Downloads/LogicalLab/lab2-4bit-adder/adder4bit/lab2.sch
+//Design Name: lab2
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module lab2(btn0, 
+            mclk, 
+            sw, 
+            an, 
+            dp, 
+            seq);
+
+    input btn0;
+    input mclk;
+    input [7:0] sw;
+   output [3:0] an;
+   output dp;
+   output [6:0] seq;
+   
+   wire [4:0] XLXN_10;
+   wire [3:0] XLXN_11;
+   wire [3:0] XLXN_12;
+   wire [3:0] XLXN_20;
+   wire [3:0] an_DUMMY;
+   
+   assign an[3:0] = an_DUMMY[3:0];
+   adder  XLXI_1 (.a(sw[7:4]), 
+                 .b(sw[3:0]), 
+                 .s(XLXN_10[4:0]));
+   byte2bcd  XLXI_2 (.ci(XLXN_10[4:0]), 
+                    .high(XLXN_12[3:0]), 
+                    .low(XLXN_11[3:0]));
+   choose  XLXI_3 (.a(XLXN_11[3:0]), 
+                  .b(XLXN_12[3:0]), 
+                  .n0(an_DUMMY[3:0]), 
+                  .c(XLXN_20[3:0]));
+   an_gen  XLXI_4 (.btn0(btn0), 
+                  .mclk(mclk), 
+                  .an(an_DUMMY[3:0]));
+   leddigit  XLXI_6 (.Dd(XLXN_20[3:0]), 
+                    .a(seq[0]), 
+                    .b(seq[1]), 
+                    .c(seq[2]), 
+                    .d(seq[3]), 
+                    .dp(dp), 
+                    .e(seq[4]), 
+                    .f(seq[5]), 
+                    .g(seq[6]));
+endmodule
