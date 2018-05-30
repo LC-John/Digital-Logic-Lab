@@ -1,0 +1,28 @@
+sch2hdl -intstyle ise -family spartan3e -verilog mod10_drc.vf -w G:/study/MY_Verilogs/Lab3_1400013399_zyw/mod10.sch 
+xst -intstyle ise -ifn "G:/study/MY_Verilogs/Lab3_1400013399_zyw/mod10.xst" -ofn "G:/study/MY_Verilogs/Lab3_1400013399_zyw/mod10.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_Lab3.ucf -p xc3s100e-cp132-5 mod10.ngc mod10.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o mod10_map.ncd mod10.ngd mod10.pcf 
+par -w -intstyle ise -ol high -t 1 mod10_map.ncd mod10.ncd mod10.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml mod10.twx mod10.ncd -o mod10.twr mod10.pcf -ucf Basys2_Lab3.ucf 
+bitgen -intstyle ise -f mod10.ut mod10.ncd 
+xst -intstyle ise -ifn "G:/study/MY_Verilogs/Lab3_1400013399_zyw/mod10.xst" -ofn "G:/study/MY_Verilogs/Lab3_1400013399_zyw/mod10.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_Lab3.ucf -p xc3s100e-cp132-5 mod10.ngc mod10.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o mod10_map.ncd mod10.ngd mod10.pcf 
+par -w -intstyle ise -ol high -t 1 mod10_map.ncd mod10.ncd mod10.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml mod10.twx mod10.ncd -o mod10.twr mod10.pcf -ucf Basys2_Lab3.ucf 
+bitgen -intstyle ise -f mod10.ut mod10.ncd 
+xst -intstyle ise -ifn "G:/study/MY_Verilogs/Lab3_1400013399_zyw/mod10.xst" -ofn "G:/study/MY_Verilogs/Lab3_1400013399_zyw/mod10.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Basys2_Lab3.ucf -p xc3s100e-cp132-5 mod10.ngc mod10.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o mod10_map.ncd mod10.ngd mod10.pcf 
+par -w -intstyle ise -ol high -t 1 mod10_map.ncd mod10.ncd mod10.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml mod10.twx mod10.ncd -o mod10.twr mod10.pcf -ucf Basys2_Lab3.ucf 
+bitgen -intstyle ise -f mod10.ut mod10.ncd 
+sch2sym -intstyle ise -family spartan3e -refsym mod10 G:/study/MY_Verilogs/Lab3_1400013399_zyw/mod10.sch G:/study/MY_Verilogs/Lab3_1400013399_zyw/mod10.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym mod10 C:/Users/DrLC/Downloads/lab3_1400013399/lab3_1400013399/Lab3_1400013399_zyw/mod10.sch C:/Users/DrLC/Downloads/lab3_1400013399/lab3_1400013399/Lab3_1400013399_zyw/mod10.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym mod10 C:/Users/DrLC/Downloads/lab3_1400013399/lab3_1400013399/Lab3_1400013399_zyw/mod10.sch C:/Users/DrLC/Downloads/lab3_1400013399/lab3_1400013399/Lab3_1400013399_zyw/mod10.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym mod10 C:/Users/DrLC/Downloads/lab3_1400013399/lab3_1400013399/Lab3_1400013399_zyw/mod10.sch C:/Users/DrLC/Downloads/lab3_1400013399/lab3_1400013399/Lab3_1400013399_zyw/mod10.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym mod10 C:/Users/DrLC/Downloads/lab3_1400013399/lab3_1400013399/Lab3_1400013399_zyw/mod10.sch C:/Users/DrLC/Downloads/lab3_1400013399/lab3_1400013399/Lab3_1400013399_zyw/mod10.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym mod10 C:/Users/DrLC/Downloads/lab3_1400013399/lab3_1400013399/Lab3_1400013399_zyw/mod10.sch C:/Users/DrLC/Downloads/lab3_1400013399/lab3_1400013399/Lab3_1400013399_zyw/mod10.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym mod10 C:/Users/DrLC/Downloads/lab3_1400013399/lab3_1400013399/Lab3_1400013399_zyw/mod10.sch C:/Users/DrLC/Downloads/lab3_1400013399/lab3_1400013399/Lab3_1400013399_zyw/mod10.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym mod10 C:/Users/DrLC/Downloads/lab3_1400013399/lab3_1400013399/Lab3_1400013399_zyw/mod10.sch C:/Users/DrLC/Downloads/lab3_1400013399/lab3_1400013399/Lab3_1400013399_zyw/mod10.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym mod10 C:/Users/DrLC/Downloads/lab3_1400013399/lab3_1400013399/Lab3_1400013399_zyw/mod10.sch C:/Users/DrLC/Downloads/lab3_1400013399/lab3_1400013399/Lab3_1400013399_zyw/mod10.sym 

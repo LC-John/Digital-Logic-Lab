@@ -1,0 +1,13 @@
+[Inputs]
+=IN3[3:0]=
+=IN2[3:0]=
+=IN1[3:0]=
+=IN0[3:0]=
+=an[3:0]=
+[Outputs]
+dp
+=OUTseg[3:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel decoder
+

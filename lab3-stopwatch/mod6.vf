@@ -1,0 +1,149 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : mod6.vf
+// /___/   /\     Timestamp : 05/28/2018 23:26:52
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Users/DrLC/Downloads/lab3_1400013399/lab3_1400013399/Lab3_1400013399_zyw/mod6.vf -w C:/Users/DrLC/Downloads/lab3_1400013399/lab3_1400013399/Lab3_1400013399_zyw/mod6.sch
+//Design Name: mod6
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module counter163_MUSER_mod6(CLK, 
+                             CLR, 
+                             EN, 
+                             D0, 
+                             D1, 
+                             D2, 
+                             D3);
+
+    input CLK;
+    input CLR;
+    input EN;
+   output D0;
+   output D1;
+   output D2;
+   output D3;
+   
+   wire CLK1;
+   wire XLXN_6;
+   wire XLXN_9;
+   wire XLXN_15;
+   wire XLXN_17;
+   wire XLXN_18;
+   wire XLXN_20;
+   wire XLXN_22;
+   wire D0_DUMMY;
+   wire D1_DUMMY;
+   wire D2_DUMMY;
+   wire D3_DUMMY;
+   
+   assign D0 = D0_DUMMY;
+   assign D1 = D1_DUMMY;
+   assign D2 = D2_DUMMY;
+   assign D3 = D3_DUMMY;
+   FDC #( .INIT(1'b0) ) XLXI_1 (.C(CLK1), 
+               .CLR(CLR), 
+               .D(XLXN_6), 
+               .Q(D0_DUMMY));
+   FDC #( .INIT(1'b0) ) XLXI_2 (.C(CLK1), 
+               .CLR(CLR), 
+               .D(XLXN_17), 
+               .Q(D1_DUMMY));
+   FDC #( .INIT(1'b0) ) XLXI_3 (.C(CLK1), 
+               .CLR(CLR), 
+               .D(XLXN_18), 
+               .Q(D2_DUMMY));
+   FDC #( .INIT(1'b0) ) XLXI_4 (.C(CLK1), 
+               .CLR(CLR), 
+               .D(XLXN_20), 
+               .Q(D3_DUMMY));
+   XOR2  XLXI_5 (.I0(D0_DUMMY), 
+                .I1(XLXN_22), 
+                .O(XLXN_6));
+   XOR2  XLXI_6 (.I0(D1_DUMMY), 
+                .I1(D0_DUMMY), 
+                .O(XLXN_17));
+   XOR2  XLXI_7 (.I0(D2_DUMMY), 
+                .I1(XLXN_9), 
+                .O(XLXN_18));
+   XOR2  XLXI_8 (.I0(D3_DUMMY), 
+                .I1(XLXN_15), 
+                .O(XLXN_20));
+   AND2  XLXI_9 (.I0(D0_DUMMY), 
+                .I1(D1_DUMMY), 
+                .O(XLXN_9));
+   AND3  XLXI_10 (.I0(D0_DUMMY), 
+                 .I1(D1_DUMMY), 
+                 .I2(D2_DUMMY), 
+                 .O(XLXN_15));
+   VCC  XLXI_11 (.P(XLXN_22));
+   AND2  XLXI_12 (.I0(EN), 
+                 .I1(CLK), 
+                 .O(CLK1));
+endmodule
+`timescale 1ns / 1ps
+
+module mod6(CLK, 
+            CLR, 
+            EN, 
+            D0, 
+            D1, 
+            D2, 
+            D3, 
+            RCO);
+
+    input CLK;
+    input CLR;
+    input EN;
+   output D0;
+   output D1;
+   output D2;
+   output D3;
+   output RCO;
+   
+   wire XLXN_11;
+   wire XLXN_13;
+   wire XLXN_14;
+   wire D0_DUMMY;
+   wire D1_DUMMY;
+   wire D2_DUMMY;
+   wire D3_DUMMY;
+   wire RCO_DUMMY;
+   
+   assign D0 = D0_DUMMY;
+   assign D1 = D1_DUMMY;
+   assign D2 = D2_DUMMY;
+   assign D3 = D3_DUMMY;
+   assign RCO = RCO_DUMMY;
+   counter163_MUSER_mod6  XLXI_1 (.CLK(CLK), 
+                                 .CLR(XLXN_11), 
+                                 .EN(EN), 
+                                 .D0(D0_DUMMY), 
+                                 .D1(D1_DUMMY), 
+                                 .D2(D2_DUMMY), 
+                                 .D3(D3_DUMMY));
+   AND4  XLXI_4 (.I0(XLXN_13), 
+                .I1(D2_DUMMY), 
+                .I2(D1_DUMMY), 
+                .I3(XLXN_14), 
+                .O(RCO_DUMMY));
+   OR2  XLXI_5 (.I0(CLR), 
+               .I1(RCO_DUMMY), 
+               .O(XLXN_11));
+   INV  XLXI_6 (.I(D0_DUMMY), 
+               .O(XLXN_14));
+   INV  XLXI_7 (.I(D3_DUMMY), 
+               .O(XLXN_13));
+endmodule

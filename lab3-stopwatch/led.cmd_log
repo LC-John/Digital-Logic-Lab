@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/Users/DrLC/Downloads/lab3_1400013399/lab3_1400013399/Lab3_1400013399_zyw/seven_LEDS.v -lang verilog -prj Lab3 -o led.spl -module led -template C:/XilinxISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w led.spl C:/Users/DrLC/Downloads/lab3_1400013399/lab3_1400013399/Lab3_1400013399_zyw/led.sym 

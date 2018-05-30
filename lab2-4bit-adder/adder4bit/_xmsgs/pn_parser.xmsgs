@@ -8,5 +8,20 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/DrLC/Downloads/LogicalLab/lab2-4bit-adder/adder4bit/adder.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/DrLC/Downloads/LogicalLab/lab2-4bit-adder/adder4bit/an_gen.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/DrLC/Downloads/LogicalLab/lab2-4bit-adder/adder4bit/byte2bcd.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/DrLC/Downloads/LogicalLab/lab2-4bit-adder/adder4bit/choose.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/DrLC/Downloads/LogicalLab/lab2-4bit-adder/adder4bit/leddigit.v&quot; into library work</arg>
+</msg>
+
 </messages>
 

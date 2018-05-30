@@ -1,0 +1,8 @@
+verilog work "seven_LEDS.v"
+verilog work "pause.v"
+verilog work "mod6.vf"
+verilog work "mod10.vf"
+verilog work "divider.v"
+verilog work "decoder.v"
+verilog work "an_gen.v"
+verilog work "stopwatch.vf"

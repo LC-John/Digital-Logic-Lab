@@ -1,0 +1,109 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : stopwatch.vf
+// /___/   /\     Timestamp : 05/30/2018 12:57:25
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Users/DrLC/Downloads/LogicalLab/lab3-stopwatch/stopwatch.vf -w C:/Users/DrLC/Downloads/LogicalLab/lab3-stopwatch/stopwatch.sch
+//Design Name: stopwatch
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module stopwatch(btn0, 
+                 btn1, 
+                 btn3, 
+                 mclk, 
+                 an, 
+                 dp, 
+                 seg);
+
+    input btn0;
+    input btn1;
+    input btn3;
+    input mclk;
+   output [3:0] an;
+   output dp;
+   output [6:0] seg;
+   
+   wire [3:0] IN1;
+   wire [3:0] IN2;
+   wire [3:0] IN3;
+   wire [3:0] XLXN_1;
+   wire XLXN_34;
+   wire XLXN_36;
+   wire [3:0] XLXN_73;
+   wire XLXN_94;
+   wire XLXN_98;
+   wire XLXN_99;
+   wire XLXN_103;
+   wire XLXN_107;
+   wire [3:0] an_DUMMY;
+   
+   assign an[3:0] = an_DUMMY[3:0];
+   decoder  XLXI_3 (.an(an_DUMMY[3:0]), 
+                   .IN0(XLXN_73[3:0]), 
+                   .IN1(IN1[3:0]), 
+                   .IN2(IN2[3:0]), 
+                   .IN3(IN3[3:0]), 
+                   .dp(dp), 
+                   .OUTseg(XLXN_1[3:0]));
+   an_gen  XLXI_4 (.btn0(btn3), 
+                  .mclk(mclk), 
+                  .an(an_DUMMY[3:0]));
+   AND2  XLXI_9 (.I0(XLXN_99), 
+                .I1(XLXN_34), 
+                .O(XLXN_103));
+   divider  XLXI_13 (.mclk(mclk), 
+                    .CLK(XLXN_94));
+   BUFG  XLXI_14 (.I(XLXN_94), 
+                 .O(XLXN_98));
+   led  XLXI_16 (.BCD(XLXN_1[3:0]), 
+                .seg(seg[6:0]));
+   pause  XLXI_18 (.btn0(btn0), 
+                  .btn1(btn1), 
+                  .mclk(mclk), 
+                  .EN(XLXN_107));
+   mod6  XLXI_19 (.CLK(XLXN_98), 
+                 .CLR(btn0), 
+                 .EN(XLXN_103), 
+                 .D0(IN2[0]), 
+                 .D1(IN2[1]), 
+                 .D2(IN2[2]), 
+                 .D3(IN2[3]), 
+                 .RCO(XLXN_36));
+   mod10  XLXI_23 (.CLK(XLXN_98), 
+                  .CLR(btn0), 
+                  .EN(XLXN_107), 
+                  .D0(XLXN_73[0]), 
+                  .D1(XLXN_73[1]), 
+                  .D2(XLXN_73[2]), 
+                  .D3(XLXN_73[3]), 
+                  .RCO(XLXN_99));
+   mod10  XLXI_24 (.CLK(XLXN_98), 
+                  .CLR(btn0), 
+                  .EN(XLXN_99), 
+                  .D0(IN1[0]), 
+                  .D1(IN1[1]), 
+                  .D2(IN1[2]), 
+                  .D3(IN1[3]), 
+                  .RCO(XLXN_34));
+   mod10  XLXI_25 (.CLK(XLXN_98), 
+                  .CLR(btn0), 
+                  .EN(XLXN_36), 
+                  .D0(IN3[0]), 
+                  .D1(IN3[1]), 
+                  .D2(IN3[2]), 
+                  .D3(IN3[3]), 
+                  .RCO());
+endmodule

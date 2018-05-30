@@ -1,0 +1,4 @@
+vhdtdtfi -lib work G:/study/MY_Verilogs/Lab3_1400013399_zyw/an_gen.v -lang verilog -prj Lab3_1400013399_zyw -o an_gen.spl -module an_gen -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e an_gen.spl G:/study/MY_Verilogs/Lab3_1400013399_zyw/an_gen.sym 
+vhdtdtfi -lib work C:/Users/DrLC/Downloads/lab3_1400013399/lab3_1400013399/Lab3_1400013399_zyw/an_gen.v -lang verilog -prj Lab3 -o an_gen.spl -module an_gen -template C:/XilinxISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w an_gen.spl C:/Users/DrLC/Downloads/lab3_1400013399/lab3_1400013399/Lab3_1400013399_zyw/an_gen.sym 

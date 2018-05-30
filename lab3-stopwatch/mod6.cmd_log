@@ -1,0 +1,11 @@
+sch2hdl -intstyle ise -family spartan3e -verilog mod6_drc.vf -w G:/study/MY_Verilogs/Lab3_1400013399_zyw/mod6.sch 
+sch2sym -intstyle ise -family spartan3e -refsym mod6 G:/study/MY_Verilogs/Lab3_1400013399_zyw/mod6.sch G:/study/MY_Verilogs/Lab3_1400013399_zyw/mod6.sym 
+sch2sym -intstyle ise -family spartan3e -refsym mod6 G:/study/MY_Verilogs/Lab3_1400013399_zyw/mod6.sch G:/study/MY_Verilogs/Lab3_1400013399_zyw/mod6.sym 
+sch2sym -intstyle ise -family spartan3e -refsym mod6 G:/study/MY_Verilogs/Lab3_1400013399_zyw/mod6.sch G:/study/MY_Verilogs/Lab3_1400013399_zyw/mod6.sym 
+sch2hdl -intstyle ise -family spartan3e -verilog mod6_drc.vf -w G:/study/MY_Verilogs/Lab3_1400013399_zyw/mod6.sch 
+sch2sym -intstyle ise -family spartan3e -refsym mod6 G:/study/MY_Verilogs/Lab3_1400013399_zyw/mod6.sch G:/study/MY_Verilogs/Lab3_1400013399_zyw/mod6.sym 
+sch2sym -intstyle ise -family spartan3e -refsym mod6 G:/study/MY_Verilogs/Lab3_1400013399_zyw/mod6.sch G:/study/MY_Verilogs/Lab3_1400013399_zyw/mod6.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym mod6 G:/study/MY_Verilogs/Lab3_1400013399_zyw/mod6.sch G:/study/MY_Verilogs/Lab3_1400013399_zyw/mod6.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym mod6 G:/study/MY_Verilogs/Lab3_1400013399_zyw/mod6.sch G:/study/MY_Verilogs/Lab3_1400013399_zyw/mod6.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym mod6 C:/Users/DrLC/Downloads/lab3_1400013399/lab3_1400013399/Lab3_1400013399_zyw/mod6.sch C:/Users/DrLC/Downloads/lab3_1400013399/lab3_1400013399/Lab3_1400013399_zyw/mod6.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym mod6 C:/Users/DrLC/Downloads/lab3_1400013399/lab3_1400013399/Lab3_1400013399_zyw/mod6.sch C:/Users/DrLC/Downloads/lab3_1400013399/lab3_1400013399/Lab3_1400013399_zyw/mod6.sym 

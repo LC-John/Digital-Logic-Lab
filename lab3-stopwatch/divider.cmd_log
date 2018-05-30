@@ -1,0 +1,4 @@
+vhdtdtfi -lib work G:/study/MY_Verilogs/Lab3_1400013399_zyw/divider.v -lang verilog -prj Lab3_1400013399_zyw -o divider.spl -module divider -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w divider.spl G:/study/MY_Verilogs/Lab3_1400013399_zyw/divider.sym 
+vhdtdtfi -lib work C:/Users/DrLC/Downloads/LogicalLab/lab3-stopwatch/divider.v -lang verilog -prj Lab3 -o divider.spl -module divider -template C:/XilinxISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w divider.spl C:/Users/DrLC/Downloads/LogicalLab/lab3-stopwatch/divider.sym 
