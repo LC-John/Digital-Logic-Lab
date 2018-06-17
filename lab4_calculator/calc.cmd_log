@@ -1,0 +1,5 @@
+sch2sym -intstyle ise -family spartan3e -refsym calc G:/study/MY_Verilogs/lab4_1400013399_zyw/calc.sch G:/study/MY_Verilogs/lab4_1400013399_zyw/calc.sym 
+sch2sym -intstyle ise -family spartan3e -refsym calc G:/study/MY_Verilogs/lab4_1400013399_zyw/calc.sch G:/study/MY_Verilogs/lab4_1400013399_zyw/calc.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym calc G:/study/MY_Verilogs/lab4_1400013399_zyw/calc.sch G:/study/MY_Verilogs/lab4_1400013399_zyw/calc.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym calc C:/Users/DrLC/Downloads/LogicalLab/lab4_calculator/calc.sch C:/Users/DrLC/Downloads/LogicalLab/lab4_calculator/calc.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym calc C:/Users/DrLC/Downloads/LogicalLab/lab4_calculator/calc.sch C:/Users/DrLC/Downloads/LogicalLab/lab4_calculator/calc.sym 

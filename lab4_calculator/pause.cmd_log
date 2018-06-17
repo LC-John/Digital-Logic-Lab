@@ -1,0 +1,8 @@
+vhdtdtfi -lib work G:/study/MY_Verilogs/lab4_1400013399_zyw/pause.v -lang verilog -prj lab4_1400013399_zyw -o pause.spl -module pause -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e pause.spl G:/study/MY_Verilogs/lab4_1400013399_zyw/pause.sym 
+vhdtdtfi -lib work C:/Users/DrLC/Downloads/LogicalLab/lab4_calculator/pause.v -lang verilog -prj lab4_calc -o pause.spl -module pause -template C:/XilinxISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w pause.spl C:/Users/DrLC/Downloads/LogicalLab/lab4_calculator/pause.sym 
+vhdtdtfi -lib work C:/Users/DrLC/Downloads/LogicalLab/lab4_calculator/pause.v -lang verilog -prj lab4_calc -o pause.spl -module pause -template C:/XilinxISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w pause.spl C:/Users/DrLC/Downloads/LogicalLab/lab4_calculator/pause.sym 
+vhdtdtfi -lib work C:/Users/DrLC/Downloads/LogicalLab/lab4_calculator/pause.v -lang verilog -prj lab4_calc -o pause.spl -module pause -template C:/XilinxISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w pause.spl C:/Users/DrLC/Downloads/LogicalLab/lab4_calculator/pause.sym 

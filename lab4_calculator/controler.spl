@@ -1,0 +1,18 @@
+[Inputs]
+CLK
+reset
+sum
+multi
+equal
+[Outputs]
+sum_sig
+shift
+load_a
+write_l
+write_r
+show_result
+CLR
+[BiDir]
+[ATTRIBUTES]
+VeriModel controler
+

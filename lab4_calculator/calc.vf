@@ -1,0 +1,89 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : calc.vf
+// /___/   /\     Timestamp : 06/17/2018 16:29:12
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Users/DrLC/Downloads/LogicalLab/lab4_calculator/calc.vf -w C:/Users/DrLC/Downloads/LogicalLab/lab4_calculator/calc.sch
+//Design Name: calc
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module calc(an, 
+            btn, 
+            mclk, 
+            sw, 
+            dp, 
+            seg);
+
+    input [3:0] an;
+    input [3:0] btn;
+    input mclk;
+    input [7:0] sw;
+   output dp;
+   output [6:0] seg;
+   
+   wire [15:0] my_reg;
+   wire XLXN_13;
+   wire XLXN_14;
+   wire XLXN_15;
+   wire XLXN_16;
+   wire XLXN_17;
+   wire [7:0] XLXN_18;
+   wire [3:0] XLXN_25;
+   wire XLXN_26;
+   wire XLXN_27;
+   wire XLXN_28;
+   wire XLXN_29;
+   wire [7:0] XLXN_30;
+   
+   BCD2Binary  XLXI_1 (.BCD(sw[7:0]), 
+                      .Binary(XLXN_18[7:0]), 
+                      .err(XLXN_13));
+   Binary2BCD  XLXI_2 (.an(an[3:0]), 
+                      .err(XLXN_13), 
+                      .Multi(XLXN_18[7:0]), 
+                      .Product(my_reg[15:0]), 
+                      .show_result(XLXN_14), 
+                      .BCD(XLXN_25[3:0]), 
+                      .dp(dp));
+   adder_8bits  XLXI_3 (.A(XLXN_18[7:0]), 
+                       .B(my_reg[15:8]), 
+                       .load_a(XLXN_15), 
+                       .M(XLXN_17), 
+                       .sum_sig(XLXN_16), 
+                       .Result(XLXN_30[7:0]));
+   controler  XLXI_4 (.CLK(mclk), 
+                     .equal(btn[0]), 
+                     .multi(btn[1]), 
+                     .reset(btn[3]), 
+                     .sum(btn[2]), 
+                     .CLR(XLXN_26), 
+                     .load_a(XLXN_15), 
+                     .shift(XLXN_29), 
+                     .show_result(XLXN_14), 
+                     .sum_sig(XLXN_16), 
+                     .write_l(XLXN_28), 
+                     .write_r(XLXN_27));
+   seven_LEDs  XLXI_6 (.BCD(XLXN_25[3:0]), 
+                      .seg(seg[6:0]));
+   shift_register_16bits  XLXI_7 (.CLK(mclk), 
+                                 .CLR(XLXN_26), 
+                                 .data(XLXN_30[7:0]), 
+                                 .shift(XLXN_29), 
+                                 .write_l(XLXN_28), 
+                                 .write_r(XLXN_27), 
+                                 .M(XLXN_17), 
+                                 .my_reg(my_reg[15:0]));
+endmodule

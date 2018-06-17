@@ -1,0 +1,4 @@
+vhdtdtfi -lib work G:/study/MY_Verilogs/lab4_1400013399_zyw/select_module.v -lang verilog -prj lab4_1400013399_zyw -o select_module.spl -module select_module -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e select_module.spl G:/study/MY_Verilogs/lab4_1400013399_zyw/select_module.sym 
+vhdtdtfi -lib work C:/Users/DrLC/Downloads/LogicalLab/lab4_calculator/select_module.v -lang verilog -prj lab4_calc -o select_module.spl -module select_module -template C:/XilinxISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w select_module.spl C:/Users/DrLC/Downloads/LogicalLab/lab4_calculator/select_module.sym 

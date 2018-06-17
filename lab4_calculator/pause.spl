@@ -1,0 +1,10 @@
+[Inputs]
+mclk
+btn0
+btn1
+[Outputs]
+EN
+[BiDir]
+[ATTRIBUTES]
+VeriModel pause
+

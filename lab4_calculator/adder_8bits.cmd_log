@@ -1,0 +1,10 @@
+vhdtdtfi -lib work G:/study/MY_Verilogs/lab4_1400013399_zyw/adder_8bits.v -lang verilog -prj lab4_1400013399_zyw -o adder_8bits.spl -module adder_8bits -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e adder_8bits.spl G:/study/MY_Verilogs/lab4_1400013399_zyw/adder_8bits.sym 
+vhdtdtfi -lib work C:/Users/DrLC/Downloads/LogicalLab/lab4_calculator/adder_8bits.v -lang verilog -prj lab4_calc -o adder_8bits.spl -module adder_8bits -template C:/XilinxISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w adder_8bits.spl C:/Users/DrLC/Downloads/LogicalLab/lab4_calculator/adder_8bits.sym 
+vhdtdtfi -lib work C:/Users/DrLC/Downloads/LogicalLab/lab4_calculator/adder_8bits.v -lang verilog -prj lab4_calc -o adder_8bits.spl -module adder_8bits -template C:/XilinxISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w adder_8bits.spl C:/Users/DrLC/Downloads/LogicalLab/lab4_calculator/adder_8bits.sym 
+vhdtdtfi -lib work C:/Users/DrLC/Downloads/LogicalLab/lab4_calculator/adder_8bits.v -lang verilog -prj lab4_calc -o adder_8bits.spl -module adder_8bits -template C:/XilinxISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w adder_8bits.spl C:/Users/DrLC/Downloads/LogicalLab/lab4_calculator/adder_8bits.sym 
+vhdtdtfi -lib work C:/Users/DrLC/Downloads/LogicalLab/lab4_calculator/adder_8bits.v -lang verilog -prj lab4_calc -o adder_8bits.spl -module adder_8bits -template C:/XilinxISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w adder_8bits.spl C:/Users/DrLC/Downloads/LogicalLab/lab4_calculator/adder_8bits.sym 

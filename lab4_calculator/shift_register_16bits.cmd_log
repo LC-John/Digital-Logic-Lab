@@ -1,0 +1,6 @@
+vhdtdtfi -lib work G:/study/MY_Verilogs/lab4_1400013399_zyw/shift_register_16bits.v -lang verilog -prj lab4_1400013399_zyw -o shift_register_16bits.spl -module shift_register_16bits -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e shift_register_16bits.spl G:/study/MY_Verilogs/lab4_1400013399_zyw/shift_register_16bits.sym 
+vhdtdtfi -lib work C:/Users/DrLC/Downloads/LogicalLab/lab4_calculator/shift_register_16bits.v -lang verilog -prj lab4_calc -o shift_register_16bits.spl -module shift_register_16bits -template C:/XilinxISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w shift_register_16bits.spl C:/Users/DrLC/Downloads/LogicalLab/lab4_calculator/shift_register_16bits.sym 
+vhdtdtfi -lib work C:/Users/DrLC/Downloads/LogicalLab/lab4_calculator/shift_register_16bits.v -lang verilog -prj lab4_calc -o shift_register_16bits.spl -module shift_register_16bits -template C:/XilinxISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w shift_register_16bits.spl C:/Users/DrLC/Downloads/LogicalLab/lab4_calculator/shift_register_16bits.sym 

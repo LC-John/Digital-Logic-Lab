@@ -1,0 +1,10 @@
+sch2sym -intstyle ise -family spartan3e -refsym stopwatch G:/study/MY_Verilogs/lab4_1400013399_zyw/stopwatch.sch G:/study/MY_Verilogs/lab4_1400013399_zyw/stopwatch.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym stopwatch C:/Users/DrLC/Downloads/LogicalLab/lab4_calculator/stopwatch.sch C:/Users/DrLC/Downloads/LogicalLab/lab4_calculator/stopwatch.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym stopwatch C:/Users/DrLC/Downloads/LogicalLab/lab4_calculator/stopwatch.sch C:/Users/DrLC/Downloads/LogicalLab/lab4_calculator/stopwatch.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym stopwatch C:/Users/DrLC/Downloads/LogicalLab/lab4_calculator/stopwatch.sch C:/Users/DrLC/Downloads/LogicalLab/lab4_calculator/stopwatch.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym stopwatch C:/Users/DrLC/Downloads/LogicalLab/lab4_calculator/stopwatch.sch C:/Users/DrLC/Downloads/LogicalLab/lab4_calculator/stopwatch.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym stopwatch C:/Users/DrLC/Downloads/LogicalLab/lab4_calculator/stopwatch.sch C:/Users/DrLC/Downloads/LogicalLab/lab4_calculator/stopwatch.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym stopwatch C:/Users/DrLC/Downloads/LogicalLab/lab4_calculator/stopwatch.sch C:/Users/DrLC/Downloads/LogicalLab/lab4_calculator/stopwatch.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym stopwatch C:/Users/DrLC/Downloads/LogicalLab/lab4_calculator/stopwatch.sch C:/Users/DrLC/Downloads/LogicalLab/lab4_calculator/stopwatch.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym stopwatch C:/Users/DrLC/Downloads/LogicalLab/lab4_calculator/stopwatch.sch C:/Users/DrLC/Downloads/LogicalLab/lab4_calculator/stopwatch.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym stopwatch C:/Users/DrLC/Downloads/LogicalLab/lab4_calculator/stopwatch.sch C:/Users/DrLC/Downloads/LogicalLab/lab4_calculator/stopwatch.sym 

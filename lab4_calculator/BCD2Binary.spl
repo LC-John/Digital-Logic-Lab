@@ -1,0 +1,9 @@
+[Inputs]
+=BCD[7:0]=
+[Outputs]
+err
+=Binary[7:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel BCD2Binary
+

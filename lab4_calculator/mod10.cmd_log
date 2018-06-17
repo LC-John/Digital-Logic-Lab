@@ -1,0 +1,3 @@
+sch2sym -intstyle ise -family spartan3e -refsym mod10 G:/study/MY_Verilogs/lab4_1400013399_zyw/mod10.sch G:/study/MY_Verilogs/lab4_1400013399_zyw/mod10.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym mod10 C:/Users/DrLC/Downloads/LogicalLab/lab4_calculator/mod10.sch C:/Users/DrLC/Downloads/LogicalLab/lab4_calculator/mod10.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym mod10 C:/Users/DrLC/Downloads/LogicalLab/lab4_calculator/mod10.sch C:/Users/DrLC/Downloads/LogicalLab/lab4_calculator/mod10.sym 

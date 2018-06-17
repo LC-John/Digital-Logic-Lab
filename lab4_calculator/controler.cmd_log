@@ -1,0 +1,6 @@
+vhdtdtfi -lib work G:/study/MY_Verilogs/lab4_1400013399_zyw/controler.v -lang verilog -prj lab4_1400013399_zyw -o controler.spl -module controler -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e controler.spl G:/study/MY_Verilogs/lab4_1400013399_zyw/controler.sym 
+vhdtdtfi -lib work C:/Users/DrLC/Downloads/LogicalLab/lab4_calculator/controler.v -lang verilog -prj lab4_calc -o controler.spl -module controler -template C:/XilinxISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w controler.spl C:/Users/DrLC/Downloads/LogicalLab/lab4_calculator/controler.sym 
+vhdtdtfi -lib work C:/Users/DrLC/Downloads/LogicalLab/lab4_calculator/controler.v -lang verilog -prj lab4_calc -o controler.spl -module controler -template C:/XilinxISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w controler.spl C:/Users/DrLC/Downloads/LogicalLab/lab4_calculator/controler.sym 

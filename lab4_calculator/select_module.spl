@@ -1,0 +1,14 @@
+[Inputs]
+mclk
+btn3
+dp1
+dp2
+=seg1[6:0]=
+=seg2[6:0]=
+[Outputs]
+dp_out
+=seg_out[6:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel select_module
+

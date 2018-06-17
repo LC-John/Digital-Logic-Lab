@@ -1,0 +1,22 @@
+select figure at 19 1267 8 -branches -sn=1
+select figure at 104 1115 8 -branches -sn=1
+select figure at 323 1093 8 -branches -sn=1
+select figure at 282 1212 8 -branches -sn=1
+select figure at 82 1349 8 -branches -sn=1
+update symbols adder_8bits
+select figure at 1750 1628 8 -branches -sn=1
+select figure at -45 1323 8 -branches -sn=1
+update symbols adder_8bits
+select figure at 1342 714 8 -branches -sn=1
+select figure at 2245 918 8 -branches -sn=1
+select figure at -97 1405 8 -branches -sn=1
+select figure at 372 981 8 -branches -sn=1
+update symbols adder_8bits
+select figure at 1015 1278 8 -branches -sn=1
+select figure at 223 1011 8 -branches -sn=1
+select figure at 223 1011 8 -branches -sn=1
+select figure at -63 1133 8 -branches -sn=1
+select figure at 253 1148 8 -branches -sn=1
+select figure at 253 795 8 -branches -sn=1
+select figure at 937 1215 8 -branches -sn=1
+select figure at 123 1546 8 -branches -sn=1

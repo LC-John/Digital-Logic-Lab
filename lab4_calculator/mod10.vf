@@ -1,0 +1,122 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : mod10.vf
+// /___/   /\     Timestamp : 06/17/2018 16:30:13
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Users/DrLC/Downloads/LogicalLab/lab4_calculator/mod10.vf -w C:/Users/DrLC/Downloads/LogicalLab/lab4_calculator/mod10.sch
+//Design Name: mod10
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module counter163_MUSER_mod10(CLK, 
+                              CLR, 
+                              EN, 
+                              D);
+
+    input CLK;
+    input CLR;
+    input EN;
+   output [3:0] D;
+   
+   wire XLXN_9;
+   wire XLXN_10;
+   wire XLXN_13;
+   wire XLXN_16;
+   wire XLXN_19;
+   wire XLXN_20;
+   wire XLXN_26;
+   wire XLXN_27;
+   wire [3:0] D_DUMMY;
+   
+   assign D[3:0] = D_DUMMY[3:0];
+   FDC #( .INIT(1'b0) ) XLXI_1 (.C(XLXN_9), 
+               .CLR(CLR), 
+               .D(XLXN_16), 
+               .Q(D_DUMMY[1]));
+   FDC #( .INIT(1'b0) ) XLXI_3 (.C(XLXN_9), 
+               .CLR(CLR), 
+               .D(XLXN_10), 
+               .Q(D_DUMMY[0]));
+   FDC #( .INIT(1'b0) ) XLXI_4 (.C(XLXN_9), 
+               .CLR(CLR), 
+               .D(XLXN_20), 
+               .Q(D_DUMMY[2]));
+   FDC #( .INIT(1'b0) ) XLXI_5 (.C(XLXN_9), 
+               .CLR(CLR), 
+               .D(XLXN_27), 
+               .Q(D_DUMMY[3]));
+   XOR2  XLXI_6 (.I0(D_DUMMY[0]), 
+                .I1(XLXN_13), 
+                .O(XLXN_10));
+   XOR2  XLXI_7 (.I0(D_DUMMY[1]), 
+                .I1(D_DUMMY[0]), 
+                .O(XLXN_16));
+   XOR2  XLXI_8 (.I0(D_DUMMY[2]), 
+                .I1(XLXN_19), 
+                .O(XLXN_20));
+   XOR2  XLXI_9 (.I0(D_DUMMY[3]), 
+                .I1(XLXN_26), 
+                .O(XLXN_27));
+   AND2  XLXI_10 (.I0(EN), 
+                 .I1(CLK), 
+                 .O(XLXN_9));
+   AND2  XLXI_11 (.I0(D_DUMMY[0]), 
+                 .I1(D_DUMMY[1]), 
+                 .O(XLXN_19));
+   AND3  XLXI_12 (.I0(D_DUMMY[0]), 
+                 .I1(D_DUMMY[1]), 
+                 .I2(D_DUMMY[2]), 
+                 .O(XLXN_26));
+   VCC  XLXI_13 (.P(XLXN_13));
+endmodule
+`timescale 1ns / 1ps
+
+module mod10(CLK, 
+             CLR, 
+             EN, 
+             D, 
+             RCO);
+
+    input CLK;
+    input CLR;
+    input EN;
+   output [3:0] D;
+   output RCO;
+   
+   wire XLXN_1;
+   wire XLXN_7;
+   wire XLXN_8;
+   wire [3:0] D_DUMMY;
+   wire RCO_DUMMY;
+   
+   assign D[3:0] = D_DUMMY[3:0];
+   assign RCO = RCO_DUMMY;
+   counter163_MUSER_mod10  XLXI_2 (.CLK(CLK), 
+                                  .CLR(XLXN_1), 
+                                  .EN(EN), 
+                                  .D(D_DUMMY[3:0]));
+   OR2  XLXI_3 (.I0(CLR), 
+               .I1(RCO_DUMMY), 
+               .O(XLXN_1));
+   INV  XLXI_4 (.I(D_DUMMY[0]), 
+               .O(XLXN_7));
+   INV  XLXI_5 (.I(D_DUMMY[2]), 
+               .O(XLXN_8));
+   AND4  XLXI_6 (.I0(D_DUMMY[3]), 
+                .I1(XLXN_8), 
+                .I2(D_DUMMY[1]), 
+                .I3(XLXN_7), 
+                .O(RCO_DUMMY));
+endmodule

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\DrLC\Downloads\LogicalLab\lab4_calculator\lab4.ncd
+OUTFILE=C:\Users\DrLC\Downloads\LogicalLab\lab4_calculator\lab4.bit
+FAMILY=Spartan3E
+PART=xc3s100e-5cp132
+WORKINGDIR=C:\Users\DrLC\Downloads\LogicalLab\lab4_calculator
+LICENSE=WebPack
+USER_INFO=174169066_174169067_0_271

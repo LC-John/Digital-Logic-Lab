@@ -1,0 +1,14 @@
+[Inputs]
+CLR
+CLK
+shift
+write_l
+write_r
+=data[7:0]=
+[Outputs]
+M
+=my_reg[15:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel shift_register_16bits
+

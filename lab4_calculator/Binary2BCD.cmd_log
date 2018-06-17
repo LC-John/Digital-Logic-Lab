@@ -1,0 +1,8 @@
+vhdtdtfi -lib work G:/study/MY_Verilogs/lab4_1400013399_zyw/Binary2BCD.v -lang verilog -prj lab4_1400013399_zyw -o Binary2BCD.spl -module Binary2BCD -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e Binary2BCD.spl G:/study/MY_Verilogs/lab4_1400013399_zyw/Binary2BCD.sym 
+vhdtdtfi -lib work G:/study/MY_Verilogs/lab4_1400013399_zyw/Binary2BCD.v -lang verilog -prj lab4_1400013399_zyw -o Binary2BCD.spl -module Binary2BCD -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e Binary2BCD.spl G:/study/MY_Verilogs/lab4_1400013399_zyw/Binary2BCD.sym 
+vhdtdtfi -lib work C:/Users/DrLC/Downloads/LogicalLab/lab4_calculator/Binary2BCD.v -lang verilog -prj lab4_calc -o Binary2BCD.spl -module Binary2BCD -template C:/XilinxISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Binary2BCD.spl C:/Users/DrLC/Downloads/LogicalLab/lab4_calculator/Binary2BCD.sym 
+vhdtdtfi -lib work C:/Users/DrLC/Downloads/LogicalLab/lab4_calculator/Binary2BCD.v -lang verilog -prj lab4_calc -o Binary2BCD.spl -module Binary2BCD -template C:/XilinxISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Binary2BCD.spl C:/Users/DrLC/Downloads/LogicalLab/lab4_calculator/Binary2BCD.sym 

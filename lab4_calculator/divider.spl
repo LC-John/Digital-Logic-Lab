@@ -1,0 +1,8 @@
+[Inputs]
+mclk
+[Outputs]
+CLK
+[BiDir]
+[ATTRIBUTES]
+VeriModel divider
+

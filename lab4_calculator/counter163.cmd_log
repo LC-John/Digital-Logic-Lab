@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family spartan3e -refsym counter163 G:/study/MY_Verilogs/lab4_1400013399_zyw/counter163.sch G:/study/MY_Verilogs/lab4_1400013399_zyw/counter163.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym counter163 C:/Users/DrLC/Downloads/LogicalLab/lab4_calculator/counter163.sch C:/Users/DrLC/Downloads/LogicalLab/lab4_calculator/counter163.sym 
